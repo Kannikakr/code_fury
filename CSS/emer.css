@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("https://github.com/user-attachments/assets/cf2758e6-b035-44cc-b25e-d0290e83e759");
+    background-size: cover;
+    background-position: center;
+    color: #333; /* Default text color */
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    line-height: 1.2;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    margin: 20px 0;
+    color: black; 
+    text-shadow: #4a90e2;
+}
+
+#contact-form {
+    width: 50%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form:hover {
+    background-color: #f0f0f0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333; /* Font color for labels */
+    transition: color 0.3s ease;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+    width: calc(100% - 16px);
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333; /* Font color for input text */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 6px rgba(74, 144, 226, 0.5);
+    outline: none;
+}
+
+button {
+    background-color: #4a90e2;
+    color: white; /* Font color for button text */
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #357abd;
+}
+
+#contact-list {
+    width: 50%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#contacts {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#contacts li {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    color: #333; /* Font color for contact list items */
+}
+
+#contacts li:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.02);
+}
+
+#contacts li:last-child {
+    border-bottom: none;
+}
+
+#contacts li h3 {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #4a90e2; /* Font color for headings in contact list */
+}
+
+#contacts li p {
+    font-size: 14px;
+    margin-bottom: 16px;
+    color: #666; /* Font color for paragraphs in contact list */
+}
+
+#emergency{
+    background-image: "../img/bg4.jpeg";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
