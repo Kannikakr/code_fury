@@ -1,0 +1,46 @@
+<?php 
+
+require_once("connection.php");
+connect_db();
+session_start();
+
+
+
+if (!isset($_SESSION['user'])) {
+	header('location: login.php');
+	exit;
+}
+
+$user=$_SESSION['user'];
+
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/img_gallery.css">
+</head>
+<body>
+    <div class="scope">
+        <span style="--i:1;"><img src="../img/ig1.jpeg" alt="not found"></span>
+        <span style="--i:2;"><img src="../img/ig2.jpeg" alt="not found"></span>
+        <span style="--i:3;"><img src="../img/ig3.jpeg" alt="not found"></span>
+        <span style="--i:4;"><img src="../img/ig4.jpeg"
+                alt="not found"></span>
+        <span style="--i:5;"><img src="../img/ig5.jpeg" alt="not found"></span>
+        <span style="--i:6;"><img src="../img/ig6.jpeg" alt="not found"></span>
+        <span style="--i:7;"><img
+                src="../img/ig7.jpeg"
+                alt="not found"></span>
+        <span style="--i:8;"><img
+                src="../img/bg2.jpeg"
+                alt="not found"></span>
+    </div>
+
+
+</body>
+</html>

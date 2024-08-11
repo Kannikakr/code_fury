@@ -1,0 +1,90 @@
+<?php 
+
+require_once("connection.php");
+connect_db();
+session_start();
+
+
+
+if (!isset($_SESSION['user'])) {
+	header('location: login.php');
+	exit;
+}
+
+$user=$_SESSION['user'];
+
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/precautions.css">
+</head>
+
+<body>
+    <h1 id="pre"> Prections_can_be_taken</h1>
+    <div class="container">
+
+        <div class="text-box-container">
+            <div class="text-box" id="about"> <b>EarthQuake</b> </div>
+            <div class="text-box" id="con"> Prepare an Emergency Kit: include essentials like food, water, medications
+                and flashlight Stay Indoors: Remain inside to avoid falling debris. If you’re indoors, stay away from
+                windows and heavy objects.
+                If Outside: Move to an open area away from buildings, trees, and utility wires. Provide first aid and
+                seek medical attention for serious injuries. Listen to emergency broadcasts for updates
+                and instructions.</div>
+        </div>
+        <div class="image-box">
+            <img src="../img/p1 (4).jpeg" alt="Image">
+        </div>
+    </div>
+    <div class="container">
+        <div class="image-box">
+            <img src="../img/p1 (1).jpeg" alt="Image">
+        </div>
+        <div class="text-box-container">
+            <div class="text-box" id="about"> <b>Tsunami</b> </div>
+            <div class="text-box" id="con">Move to Higher Ground, Avoid the Beaches
+                Check for Injuries: Provide first aid and seek medical help for serious injuries.
+                Listen for Updates: Keep informed through local news and emergency broadcasts for updates on the
+                situation and recovery instructions</div>
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="text-box-container">
+            <div class="text-box" id="about"> <b>Flood</b> </div>
+            <div class="text-box" id="con"> Move to Higher Ground: If you’re in a flood-prone area, seek higher ground
+                immediately to avoid rising waters.
+                Follow Official Advice: Listen to local authorities for evacuation orders and safety information.
+                Avoid Contact with Contaminated Water: Floodwater may be contaminated. Avoid contact and ensure that
+                food and water supplies are safe.</div>
+        </div>
+        <div class="image-box">
+            <img src="../img/p1 (3).jpeg" alt="Image">
+        </div>
+    </div>
+    <div class="container">
+        <div class="image-box">
+            <img src="../img/p4.jpeg" alt="Image">
+        </div>
+        <div class="text-box-container">
+            <div class="text-box" id="about"> <b>Volcanic_eruption</b> </div>
+            <div class="text-box" id="con">Follow Evacuation Orders:
+                Immediate Evacuation: If local authorities issue an evacuation order, leave the area immediately and follow the recommended evacuation routes.
+                Wear Protective Gear: If you must go outside, wear long sleeves, long pants, a mask (N95 or similar), and goggles to protect your skin, lungs, and eyes from ash.
+                Avoid Hazardous Areas,Avoid Ash-Covered Areas.
+                Respiratory Issues:  seek medical attention immediately.</div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
