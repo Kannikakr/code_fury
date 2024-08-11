@@ -1,1 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    -
+    <meta name="description"
+        content="Get help, resources, and support for natural disasters. Prepare, respond, and recover with our expert guidance and critical tools." />
+    -
+    <meta name="keywords"
+        content="natural disaster help, disaster resources, emergency preparedness, crisis management, disaster relief" />
+    <title>Star_com</title>
+    <link rel="stylesheet" href="../css/star_com.css" />
+    <link rel="stylesheet" href="../css/chat_bot.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700,300">
+    <link rel="icon" type="image/svg+xml" href="vite.svg" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400&family=Finger+Paint&display=swap">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <script src="../js/chat_bot.js" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("RqCFpvrrGWC8TIfaU");
+        })();
+    </script>
+</head>
+
+<body>
+
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+        <label class="letter-change-text" data-text-value="STAR COM">STAR COM</label>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#abot">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#comments">Reviews</a></li>
+            <li><a href="login.php">Login</a></li>
+            <li><a href="logout.php">Logout</a></li>
+        </ul>
+    </nav>
+
+    <!--<div class="switch-container">
+        <div class="switch">Dark mode:
+            <span class="inner-switch">OFF</span>
+        </div>
+    </div>-->
+    <button class="chatbot-toggler">
+        <span class="material-symbols-rounded">mode_comment</span>
+        <span class="material-symbols-outlined">close</span>
+    </button>
+    <div class="chatbot">
+        <header>
+            <h2>Chatbot</h2>
+            <span class="close-btn material-symbols-outlined">close</span>
+        </header>
+        <ul class="chatbox">
+            <li class="chat incoming">
+                <span class="material-symbols-outlined">smart_toy</span>
+                <p>Hi there <br>How can I help you today?</p>
+            </li>
+        </ul>
+        <div class="chat-input">
+            <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+            <span id="send-btn" class="material-symbols-rounded">send</span>
+        </div>
+    </div>
+
+    <section id="home">
+        <div class="container">
+            <div class="image-box">
+                <img src="../img/bg4.jpeg" alt="Image">
+            </div>
+            <div class="text-box-container">
+                <div class="text-box" id="about"><b>Welcome to Star_com !!</b></div>
+                <div class="text-box" id="con">Building stronger communities through disaster preparedness and response
+                    Offering hope and help in times of crisis
+                    Your trusted partner in disaster resilience and recovery
+                    Serving with compassion, expertise, and dedication
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="abot">
+        <div class="container1">
+            <div class="text-box-container1">
+                <div class="text-box1" id="about1"><b>ABOUT US >></b></div>
+                <div class="text-box1" id="con1">Empowering communities to prepare, respond, and recover from natural
+                    disasters with compassion, expertise, and critical resources</div>
+            </div>
+            <div class="image-box1">
+                <img src="../img/bg5.jpeg" alt="About Us Image">
+            </div>
+        </div>
+    </section>
+    <h1 class="mainhead">Emergency!!! Contact us </h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 p-5 bg-primary text-white">
+                <h1>Emergency!!</h1>
+                <h4>Stay connected, stay informed, and stay safe with our Emergency Contact Manager</h4>
+            </div>
+            <div class="col-md-6 py-3">
+                <h1>Contact Form</h1>
+                <div class="form-group">
+                    <h5 for="name">Name</h5>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <h5 for="email">Email</h5>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <h5 for="message">Enter palce and calamity</h5>
+                    <h5 id="copy">Click on show my location</h5>
+                    <textarea id="message" rows="3" class="form-control" placeholder="Enter your message"></textarea>
+                </div>
+                <button class="btn btn-primary" onclick="sendMail()">Submit</button>
+                <br>
+                <br>
+                <button id="find-me">Show my location</button><br />
+                <p id="status"></p>
+                <a id="map-link" target="_blank"></a>
+            </div>
+        </div>
+    </div>
+
+    <section id="services">
+        <div class="card-list">
+            <a href="precaution.html" class="card-item">
+                <img src="../img/l1.jpeg" alt="Card Image">
+                <span class="developer">Precautions</span>
+                <h3>Prepare for the unexpected: learn how to take precautions against natural disasters and reduce their
+                    impact</h3>
+                <div class="arrow">
+                    <i class="fas fa-arrow-right card-icon"></i>
+                </div>
+            </a>
+            <a href="weather.html" class="card-item">
+                <img src="../img/l3.jpg" alt="Card Image">
+                <span class="designer">Weather_check</span>
+                <h3>Stay informed, stay safe: get the latest weather updates and alerts to prepare for natural disasters
+                </h3>
+                <div class="arrow">
+                    <i class="fas fa-arrow-right card-icon"></i>
+                </div>
+            </a>
+            <a href="emer.html" class="card-item">
+                <img src="../img/l2.jpeg" alt="Card Image">
+                <span class="editor">Help others</span>
+                <h3>Selfless individuals and organizations dedicate their time and resources to support the needy,
+                    fostering a culture of kindness and generosity</h3>
+                <div class="arrow">
+                    <i class="fas fa-arrow-right card-icon"></i>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section id="features">
+        <div class="wrapper">
+            <h1 class="os">OUR FEATURES</h1>
+            <div class="container2">
+                <div class="box">
+                    <img src="https://cdn-icons-png.flaticon.com/512/12964/12964786.png" alt="Image Gallery">
+                    <h1>Image Gallery</h1>
+                    <p>An image gallery is a curated collection of visual content, often organized by theme or subject,
+                        displayed for viewing in physical or digital spaces</p>
+                    <a href="img_gallary.html" class="btn">View Gallery</a>
+                </div>
+                <div class="box">
+                    <img src="../img/quiz.png" alt="Quiz">
+                    <h1> QUIZ</h1>
+                    <p>A quiz is a short assessment or game designed to test knowledge, skills, or understanding on a
+                        particular subject, often with a series of questions</p>
+                    <a href="quiz.html" class="btn">Take Quiz</a>
+                </div>
+                <div class="box">
+                    <img src="../img/game.png" alt="Games">
+                    <h1>GAMES </h1>
+                    <p>Games are structured forms of play or competitive activities, typically involving rules, goals,
+                        and interaction, designed for entertainment</p>
+                    <a href="hangman.html" class="btn">Play Games</a>
+                </div>
+                <div class="box">
+                    <img src="..//img/bot.png" alt="Suggestions">
+                    <h1>Movies</h1>
+                    <p>When the earth unleashes its fury, survival becomes the ultimate challenge</p>
+                    <a href="slide.html" class="btn">Watch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--<div class="card">
+      <div id="header">
+          <h1>Chatter box!</h1>
+      </div>
+      <div id="message-section">
+          <div class="message" id="bot"><span id="bot-response">Hello.. I'm listening! Go on..</span></div>
+      </div>
+      <div id="input-section">
+          <input id="input" type="text" placeholder="Type a message" autocomplete="off" autofocus="autofocus" />
+          <button class="send" onclick="sendMessage()">
+              <div class="circle"><i class="zmdi zmdi-mail-send"></i></div>
+          </button>
+      </div>
+  </div>-->
+
+
+    <div>
+        <h2 class="title">ADD YOUR COMMENTS</h2>
+    </div>
+
+    <section class="section journal-section" id="comments">
+        <div class="container">
+            <div class="container-row container-row-journal">
+                <div class="container-item container-item-journal">
+                    <form id="entryForm" action="">
+                        <label for="entry-title" class="journal-label">Entry Title</label>
+                        <input type="text" name="entry-title" id="entry-title" class="entry-text-title"
+                            placeholder="Name of entry ✏️" />
+                        <label for="entry" class="journal-label">Today's Entry</label>
+                        <textarea name="daily-entry" id="entry" class="entry-text-box"
+                            placeholder="What's on your mind today? 💭"></textarea>
+                        <button class="btn-main entry-submit-btn" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section sectionEntryResults" id="entryResultsSection">
+        <div class="container">
+            <div class="container-row entryResultRow"></div>
+        </div>
+    </section>
+    <section id="testimonials">
+        <div class="testimonial-heading">
+            <span>Comments</span>
+            <h4>Clients Says</h4>
+        </div>
+        <div class="testimonial-box-container">
+            <div class="testimonial-box">
+                <div class="box-top">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="https://cdn3.iconfinder.com/data/icons/avatars-15/64/_Ninja-2-512.png" />
+                        </div>
+                        <div class="name-user">
+                            <strong>Liam mendes</strong>
+                            <span>@liammendes</span>
+                        </div>
+                    </div>
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <div class="client-comment">
+                    <p>The website's earthquake safety tips saved my family's life!</p>
+                </div>
+            </div>
+            <div class="testimonial-box">
+                <div class="box-top">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="https://cdn3.iconfinder.com/data/icons/avatars-15/64/_Ninja-2-512.png" />
+                        </div>
+                        <div class="name-user">
+                            <strong>Noah Wood</strong>
+                            <span>@noahwood</span>
+                        </div>
+                    </div>
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="client-comment">
+                    <p>The website's emergency contact numbers helped me get rescued during the flood!</p>
+                </div>
+            </div>
+            <div class="testimonial-box">
+                <div class="box-top">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="https://cdn3.iconfinder.com/data/icons/avatars-15/64/_Ninja-2-512.png" />
+                        </div>
+                        <div class="name-user">
+                            <strong>Oliver Queen</strong>
+                            <span>@oliverqueen</span>
+                        </div>
+                    </div>
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <div class="client-comment">
+                    <p>The website's survival tips helped me endure the extreme weather conditions.</p>
+                </div>
+            </div>
+            <div class="testimonial-box">
+                <div class="box-top">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="https://cdn3.iconfinder.com/data/icons/avatars-15/64/_Ninja-2-512.png" />
+                        </div>
+                        <div class="name-user">
+                            <strong>Barry Allen</strong>
+                            <span>@barryallen</span>
+                        </div>
+                    </div>
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <div class="client-comment">
+                    <p>I'm grateful for the website's resources, which helped me survive the natural disaster!</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="chatbot-toggler">
+            <span class="material-symbols-rounded">mode_comment</span>
+            <span class="material-symbols-outlined">close</span>
+        </button>
+        <div class="chatbot">
+            <header>
+                <h2>Chatbot</h2>
+                <span class="close-btn material-symbols-outlined">close</span>
+            </header>
+            <ul class="chatbox">
+                <li class="chat incoming">
+                    <span class="material-symbols-outlined">smart_toy</span>
+                    <p>Hi there <br>How can I help you today?</p>
+                </li>
+            </ul>
+            <div class="chat-input">
+                <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+                <span id="send-btn" class="material-symbols-rounded">send</span>
+            </div>
+        </div>
+
+    </section><br><br><br><br><br>
+
+
+
+
+    <div width="100%" height="250px">
+        <footer class="footer">
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+            <ul class="menu">
+                <li class="menu__item"><a class="menu__link" href="#home">Home</a></li>
+                <li class="menu__item"><a class="menu__link" href="#abot">About</a></li>
+                <li class="menu__item"><a class="menu__link" href="#services">Services</a></li>
+                <li class="menu__item"><a class="menu__link" href="#features">Features</a></li>
+                <li class="menu__item"><a class="menu__link" href="#comments">Reviews</a></li>
+
+            </ul>
+            <p>&copy;2024 kannika| All Rights Reserved</p>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="../js/star_com.js"></script>
+    <script src="../js/chat_bot.js"></script>
+
+
+    <script type="application/ld+json">
+        {
+          "@context": "(link unavailable)",
+          "@type": "Organization",
+          "name": "[Your Organization]",
+          "description": "Providing expert guidance and critical tools for natural disaster preparedness, response, and recovery.",
+          "url": "(link unavailable)"
+        }
+        </script>
+</body>
+
+</html>
